@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mk体育 · 简明指南与访问提醒</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #f3f4f6;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    /* hero */
+    .hero {
+      background: linear-gradient(145deg, #ffffff, #f1f5f9);
+      border: 1px solid #e2e8f0;
+      border-radius: 28px;
+      padding: 2.8rem 2rem;
+      box-shadow: 0 8px 20px -6px rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.02);
+      text-align: center;
+      margin-bottom: 2.4rem;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+      margin-bottom: 0.6rem;
+    }
+    .hero .sub {
+      font-size: 1.05rem;
+      color: #475569;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .hero .tagline {
+      display: inline-block;
+      background: #eef2f6;
+      padding: 0.2rem 1.2rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      color: #334155;
+      margin-top: 0.6rem;
+      border: 1px solid #d1d9e6;
+    }
+
+    /* 卡片网格 */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin-bottom: 2.4rem;
+    }
+    @media (max-width: 640px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 1.6rem; }
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 1.6rem 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02), 0 1px 3px rgba(0,0,0,0.03);
+      transition: box-shadow 0.2s ease;
+    }
+    .card:hover {
+      box-shadow: 0 6px 16px rgba(0,0,0,0.04), 0 2px 6px rgba(0,0,0,0.03);
+    }
+    .card-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: #eef2f6;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      border: 1px solid #d1d9e6;
+    }
+    .card h3 {
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: #0f172a;
+    }
+    .card p, .card li {
+      font-size: 0.95rem;
+      color: #334155;
+    }
+    .card ul {
+      padding-left: 1.2rem;
+      margin-top: 0.3rem;
+    }
+    .card ul li {
+      margin-bottom: 0.25rem;
+    }
+
+    /* 提示区块 */
+    .reminder {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 1.6rem 1.8rem;
+      margin-bottom: 2.4rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+    .reminder h2 {
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .reminder p {
+      margin-bottom: 0.5rem;
+      color: #334155;
+    }
+    .reminder p:last-child { margin-bottom: 0; }
+
+    /* FAQ 摘要 */
+    .faq-summary {
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid #e2e8f0;
+      padding: 1.6rem 1.8rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+    .faq-summary h2 {
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e9edf2;
+      padding: 0.7rem 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      font-weight: 500;
+      color: #1e293b;
+      margin-bottom: 0.2rem;
+    }
+    .faq-a {
+      color: #475569;
+      font-size: 0.93rem;
+    }
+
+    /* 链接样式 */
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    a:hover {
+      border-bottom-color: #2563eb;
+    }
+    .inline-link-highlight {
+      font-weight: 500;
+    }
+
+    /* 底部 */
+    .footer-note {
+      margin-top: 2.8rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #64748b;
+      border-top: 1px solid #dce2ec;
+      padding-top: 1.8rem;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- hero 区 -->
+  <div class="hero">
+    <h1>mk体育 · 简明使用指南</h1>
+    <p class="sub">从访问准备到日常使用，整理一份平实的说明，帮助你更顺畅地了解服务。</p>
+    <span class="tagline">产品说明 · 访问提醒 · 场景建议</span>
+  </div>
+
+  <!-- 双栏卡片：亮点 + 使用建议 -->
+  <div class="grid-2">
+
+    <div class="card">
+      <div class="card-icon">✦</div>
+      <h3>核心亮点</h3>
+      <ul>
+        <li>信息展示清晰，结构直接，减少不必要的跳转</li>
+        <li>适配多种设备，界面响应及时</li>
+        <li>围绕体育相关内容组织，方便快速定位</li>
+        <li>持续维护，保持基础稳定性</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <h3>使用建议</h3>
+      <ul>
+        <li>推荐使用最新版浏览器访问</li>
+        <li>保持网络连接稳定，避免页面加载中断</li>
+        <li>如遇显示异常，可尝试刷新或清除缓存</li>
+        <li>根据自身需要，合理选择浏览时段</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 场景与提醒 -->
+  <div class="reminder">
+    <h2>📌 常见使用场景</h2>
+    <p>日常查看体育资讯、赛事动态或相关服务时，可以通过 <a href="https://portal-panel-mksport.com" class="inline-link-highlight">mk体育</a> 界面快速获取信息。平台以模块化方式组织内容，首页概览与分类入口配合使用，能提高查找效率。</p>
+    <p>如果你常用移动设备访问，建议将站点添加至主屏幕（iOS Safari 或 Android Chrome 均支持），后续可一键打开，更加便捷。桌面端浏览器可以配合书签栏使用。</p>
+    <p style="margin-top: 0.8rem; background: #f8fafc; padding: 0.6rem 0.8rem; border-radius: 12px; border-left: 3px solid #94a3b8; font-size: 0.92rem;">
+      <strong>访问提醒：</strong> 确保域名输入正确，避免仿冒或第三方镜像。页面使用标准 HTTPS 协议，地址栏可核对安全锁标识。
+    </p>
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <div class="faq-summary">
+    <h2>❓ 常见疑问摘要</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">首次访问需要做哪些准备？</div>
+      <div class="faq-a">无需注册或安装额外软件，直接通过浏览器打开 <a href="https://portal-panel-mksport.com">mk体育</a> 即可浏览公开内容。部分交互功能可能基于浏览器本地存储，建议保持默认设置。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">页面显示不全或加载缓慢怎么办？</div>
+      <div class="faq-a">先检查网络环境，可尝试切换网络或关闭代理插件。其次清理浏览器缓存与 Cookie，重新加载。若问题持续，可能是临时维护，稍后重试。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">移动端与桌面端体验有区别吗？</div>
+      <div class="faq-a">核心功能一致，布局会根据屏幕宽度自适应。移动端菜单折叠在左上角，桌面端直接显示。建议根据使用习惯选择设备。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">是否建议收藏或保存链接？</div>
+      <div class="faq-a">如果你觉得界面顺手，可以通过浏览器收藏夹保存 <a href="https://portal-panel-mksport.com">mk体育</a> 主页，便于日后直接访问。无需记忆地址。</div>
+    </div>
+  </div>
+
+  <!-- 尾部 -->
+  <div class="footer-note">
+    <p>本页面为产品说明式介绍，仅提供客观使用参考。内容基于公开信息整理，不构成任何承诺或引导。</p>
+    <p style="margin-top: 0.3rem;">© 说明页 · 信息仅用于参考</p>
+  </div>
+
+</div>
+</body>
+</html>
